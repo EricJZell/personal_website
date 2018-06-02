@@ -8,30 +8,12 @@ html {
 body {
   margin: 0;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.site-wrap {
-  max-width: 700px;
-  margin: 70px auto;
-  background:white;
-  padding:40px;
-  text-align: justify;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-  transform: scale(0.98);
-  transition: transform 0.5s;
-}
-
-.fixed-nav .site-wrap {
-  transform: scale(1);
-}
 
 header {
   color: white;
   text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
   text-align: center;
-  height:45vh;
+  height:50vh;
   background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ),url(img/big_sky.jpg) bottom center no-repeat;
   background-size:cover;
   align-items:center;
@@ -55,8 +37,8 @@ nav {
   z-index: 1;
 }
 
-nav a.selected, nav a:hover {
-  color: #FFD5CC;
+nav a:hover {
+  color: #4dadf7;
 }
 
 .fixed-nav nav {
@@ -79,11 +61,66 @@ nav li {
   align-items: center;
 }
 
+li.logo {
+  max-width:0;
+  overflow: hidden;
+  background: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+li.logo a {
+  color:black;
+  padding: 0;
+}
+
+.fixed-nav li.logo {
+  max-width:150px;
+}
+
 nav a {
   text-decoration: none;
   padding:20px;
   display: inline-block;
   color:white;
-  transition:all 0.2s;
+  transition:all 0.3s;
   text-transform: uppercase;
+}
+
+.white {
+  background-color: white;
+}
+
+.section {
+  width: 100%;
+}
+
+.content-wrap {
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  padding:50px;
+  text-align: justify;
+  transform: scale(0.98);
+  transition: transform 0.5s;
+}
+
+.fixed-nav .content-wrap {
+  transform: scale(1);
+}
+
+.profile-photo {
+  float: left;
+	max-width: 150px;
+	margin: 0 auto 30px;
+	border-radius: 15%;
+}
+
+footer {
+  background-color: white;
+  color: #AAA;
+  font-size: 14px;
+  text-align: center;
+  padding: 40px;
 }
