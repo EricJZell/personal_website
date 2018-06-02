@@ -88,17 +88,22 @@ nav a {
   text-transform: uppercase;
 }
 
+h2.section-title {
+  text-align: center;
+}
+
 .white {
   background-color: white;
 }
 
 .section {
+  color: #333;
   width: 100%;
 }
 
 .content-wrap {
-  color: #333;
-  max-width: 700px;
+  display: flex;
+  max-width: 800px;
   margin: 0 auto;
   padding:50px;
   text-align: justify;
@@ -110,11 +115,18 @@ nav a {
   transform: scale(1);
 }
 
-.profile-photo {
-  float: left;
-	max-width: 150px;
-	margin: 0 auto 30px;
-	border-radius: 15%;
+.description {
+  flex: 3;
+}
+
+.image {
+  flex: 1;
+}
+
+.image img {
+  width: 80%;
+  border: 2px solid #eee;
+  margin: 20px auto;
 }
 
 footer {
