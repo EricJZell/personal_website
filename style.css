@@ -1,7 +1,7 @@
 html {
   box-sizing: border-box;
-  background:#eeeeee;
-  font-family:'helvetica neue';
+  background:#efefef;
+  font-family: 'Montserrat', 'helvetica neue';
   font-size: 20px;
   font-weight: 200;
 }
@@ -25,7 +25,7 @@ h2.welcome{
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 3em;
 }
 
 nav {
@@ -38,7 +38,7 @@ nav {
 }
 
 nav a:hover {
-  color: #4dadf7;
+  color: #CAEBF2;
 }
 
 .fixed-nav nav {
@@ -76,20 +76,27 @@ li.logo a {
 }
 
 .fixed-nav li.logo {
-  max-width:150px;
+  max-width:140px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
 }
 
 nav a {
-  text-decoration: none;
   padding:20px;
-  display: inline-block;
   color:white;
   transition:all 0.3s;
   text-transform: uppercase;
 }
 
 h2.section-title {
+  font-size: 2em;
+  color: #999;
   text-align: center;
+  padding: 40px;
+  margin: 0;
 }
 
 .white {
@@ -97,7 +104,6 @@ h2.section-title {
 }
 
 .section {
-  color: #333;
   width: 100%;
 }
 
@@ -105,14 +111,11 @@ h2.section-title {
   display: flex;
   max-width: 800px;
   margin: 0 auto;
-  padding:50px;
-  text-align: justify;
-  transform: scale(0.98);
-  transition: transform 0.5s;
+  padding:20px;
 }
 
-.fixed-nav .content-wrap {
-  transform: scale(1);
+.description p {
+  text-align: justify;
 }
 
 .description {
@@ -126,12 +129,40 @@ h2.section-title {
 .image img {
   width: 80%;
   border: 2px solid #eee;
-  margin: 20px auto;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+p, h3, h4 {
+  margin: 10px auto;
+}
+
+a.work, a.work:visited {
+  color: #999;
+  margin-top: 10px;
+  margin-right: 40px;
+  font-size: 22px;
+}
+
+a.work:hover {
+  filter: brightness(50%);
+}
+
+a.demo, a.demo:visited {
+  color: #FF3B3F;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h4.position {
+  color: #FF3B3F;
 }
 
 footer {
   background-color: white;
-  color: #AAA;
+  color: #999;
   font-size: 14px;
   text-align: center;
   padding: 40px;
