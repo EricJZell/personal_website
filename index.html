@@ -18,7 +18,7 @@
     <p>Software Engineer</p>
   </header>
 
-  <nav id="main">
+  <nav id="nav">
     <ul>
       <li class="logo"><a target="_blank" href="#">Eric Zell</a></li>
       <li><a target="_blank" href="https://github.com/EricJZell"><i class="fab fa-github-square fa-2x"></i></a></li>
@@ -29,13 +29,13 @@
   </nav>
 
 
-  <div class="section">
+  <div class="about">
     <div class="content-wrap intro">
       <div class="image">
         <img src="img/headshot.jpg" alt="Photograph of Eric Zell">
       </div>
       <div class="description">
-        <h2>
+        <h2 id="intro">
           I enjoy designing and building performant, scalable web applications.
           Based in the Boston area, I am a full-stack developer with over 8 years
           of proffesional experience delivering production level software.
@@ -44,143 +44,166 @@
     </div>
   </div>
 
-  <div class="section white">
-    <h2 class="section-title">Experience</h2>
-    <div class="content-wrap">
-      <div class="image">
-        <img src="img/one_door.png" alt="One Door Logo">
+  <div id="portfolio">
+    <div class="section experience">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="content-wrap portfolio-item">
+        <div class="image">
+          <img src="img/panorama_education_logo.jpeg" alt="Panorama Logo">
+        </div>
+        <div class="description">
+          <a target="_blank" class="work" href="https://panoramaed.com/">Panorama Education</a>
+          <h4 class="position">Senior Software Engineer (August 2019 - Present)</h4>
+          <h4 class="city">Boston, MA</h4>
+          <p>
+            At Panorama Education, I deliver reliable, scalable, and performant software.
+            I have worked on a variety of projects, from greenfield feature development, to
+            building cloud infrastructure on AWS. Some accomplishments include:
+            <ul class="bullet-points">
+              <li>
+                Migrated Panorama's cloud infrastructure from Heroku to Kubernetes clusters on AWS
+              </li>
+              <li>
+                Refactored parts of Panorama's data pipeline to improve performance and reliability
+              </li>
+              <li>
+                Redesigned aspects of Panorama's data model to significantly improve query performance and reduce disk space usage
+              </li>
+              <li>
+                Delivered internal tools to improve client onboarding and data integration
+              </li>
+              <li>
+                Helped to build a College and Carreer Readiness feature from the ground up, using Ruby on Rails and Vue.js
+              </li>
+            </ul>
+          </p>
+        </div>
       </div>
-      <div class="description">
-        <a target="_blank" class="work" href="http://onedoor.com/">One Door</a>
-        <h4 class="position">Software Engineer (November 2015 - Present)</h4>
-        <h4 class="city">Boston, MA</h4>
-        <p>
-          At One Door I deliver reliable, scalable, and performant software for
-          One Door’s cloud based enterprise application, Merchandising Cloud.
-          As a member of a scrum team, I contribute during all phases of
-          feature development, from defining requirements, to deployment, and beyond.
-          Some of my responsibilities have included:
-          <ul class="bullet-points">
-            <li>
-              Developing a Ruby on Rails back-end API to support an Ember.JS front-end, adhering to REST principles
-            </li>
-            <li>
-              Improving application performance by optimizing SQL queries and object instantiation within legacy code
-            </li>
-            <li>
-              Delivering 'Store Explorer', a feature enabling performant queries of large-scale relational databases with an intuitive user interface
-            </li>
-          </ul>
-        </p>
+      <div class="content-wrap portfolio-item">
+        <div class="image">
+          <img src="img/one_door.png" alt="One Door Logo">
+        </div>
+        <div class="description">
+          <a target="_blank" class="work" href="http://onedoor.com/">One Door</a>
+          <h4 class="position">Software Engineer (November 2015 - July 2019)</h4>
+          <h4 class="city">Boston, MA</h4>
+          <p>
+            At One Door I was a full stack developer, working primarily with Ruby on Rails, jQuery, and Ember.JS.
+            My responsibilities and contributions included:
+            <ul class="bullet-points">
+              <li>
+                Developing a Ruby on Rails back-end API to support an Ember.JS front-end, adhering to REST principles
+              </li>
+              <li>
+                Improving application performance by optimizing SQL queries and object instantiation within legacy code
+              </li>
+              <li>
+                Delivering 'Store Explorer', a feature enabling performant queries of large-scale relational databases with an intuitive user interface
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="content-wrap portfolio-item">
+        <div class="image">
+          <img src="img/navsea.jpg" alt="Navsea Logo">
+        </div>
+        <div class="description">
+          <a target="_blank" class="work" href="https://www.navsea.navy.mil/Home/Warfare-Centers/NUWC-Newport/">Naval Undersea Warfare Center (NUWC)</a>
+            <h4 class="position">Mechanical Engineer (August 2012 - August 2015)</h4>
+          <h4 class="city">Newport, RI</h4>
+          <p>
+            As a Mechanical Engineer in NUWC’s Electromagnetic Systems Department,
+            I was able to take ownership of much of the department's software development needs.
+            I became the project lead on ‘Low Cost Stabilization System for Antenna and Optical Platforms’,
+            which entailed developing a custom, low cost Inertial Navigation System prototype
+            for use within a High Data Rate Antenna. This work resulted in being awarded a U.S for
+            a <a target="_blank" href="https://patents.google.com/patent/US11268812B1/en?inventor=Eric+J+Zell">Bias Corrected Inertial Navigation System</a>.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="content-wrap">
-      <div class="image">
-        <img src="img/navsea.jpg" alt="Navsea Logo">
+
+    <div class="section projects">
+      <h2 class="section-title">Side Projects</h2>
+      <div class="content-wrap portfolio-item">
+        <div class="description">
+          <h3>Machine Learning Baseball (2018)</h3>
+          <div class="links">
+            <a target="_blank" class="work" href="https://github.com/EricJZell/machine_learning_baseball">View Source Code</a>
+            <a target="_blank" class="work demo" href="https://machine-learning-baseball.herokuapp.com/2018-06-13">Visit Demo Site</a>
+          </div>
+          <p>
+            Machine Learning Baseball is a Python web application that employs machine learning techniques
+            to predict pitcher vs. batter matchups of Major League Baseball games. This application was
+            my final project for Harvard CS50, which I completed in Spring 2018 through the Harvard Extension School.
+            Beginning with a sparse matrix of available pitcher vs. batter statistics, Low Rank Matrix Factorization
+            was used to generate a fully populated matrix which predicts statistics for every possible matchup.
+            A Python Flask web application was created to display the resulting data in an easy-to-use interface.
+          </p>
+        </div>
       </div>
-      <div class="description">
-        <a target="_blank" class="work" href="http://www.navy.mil/local/nuwc/">Naval Undersea Warfare Center (NUWC)</a>
-          <h4 class="position">Mechanical Engineer (August 2012 - August 2015)</h4>
-        <h4 class="city">Newport, RI</h4>
-        <p>
-          As a Mechanical Engineer in NUWC’s Electromagnetic Systems Department,
-          I was able to take ownership of much of the department's software development needs.
-          I became the project lead on ‘Low Cost Stabilization System for Antenna and Optical Platforms’,
-          which entailed developing a custom, low cost Inertial Navigation System prototype
-          for use within a High Data Rate Antenna. Software Development tasks included:
-          <ul class="bullet-points">
-            <li>
-              Creating an embedded application to read raw sensor data from inertial measurement sensors
-            </li>
-            <li>
-              Implementing a data-fusion algorithm utilizing a Kalman filter to fuse inertial measurement data with the ship's navigation data
-            </li>
-            <li>
-              Establishing a TCP/IP interface to transmit processed data to the antenna's controller
-            </li>
-          </ul>
-        </p>
+      <div class="content-wrap portfolio-item">
+        <div class="description">
+          <h3>First to Know (2016 / 2017)</h3>
+          <div class="links">
+            <a target="_blank" class="work" href="https://github.com/EricJZell/first_to_know">View Source Code</a>
+            <a target="_blank" class="work demo" href="https://first-to-know.herokuapp.com/">Visit Demo Site</a>
+          </div>
+          <p>
+            First to Know is a Ruby on Rails web application where users can subscribe to receive text message alerts
+            when a selected twitter user tweets a certain phrase. For example, perhaps
+            you want to be the first to know when Papa John's is giving away free pizza. You can create a
+            subscription to Papa John's twitter account for the phrase 'free pizza'. As soon as Papa John's
+            tweets anything containing the string 'free pizza', a text message will be sent to the user's
+            provided phone number within minutes.
+          </p>
+        </div>
+      </div>
+      <div class="content-wrap portfolio-item">
+        <div class="description">
+          <h3>Swell Journal (2015 / 2016)</h3>
+          <div class="links">
+            <a target="_blank" class="work" href="https://github.com/EricJZell/swell_journal">View Source Code</a>
+            <a target="_blank" class="work demo" href="https://swelljournal.herokuapp.com/">Visit Demo Site</a>
+          </div>
+          <p>
+            Swell Journal is a Ruby on Rails web application that allows users to document and share their
+            surf travels with friends. The application uses geolocation services, Google Maps, and an oceanographic weather API
+            to create a snap-shot of the conditions at the time of the journal entry.
+          </p>
+        </div>
+      </div>
+      <div class="content-wrap portfolio-item">
+        <div class="description">
+          <h3>Who's on Hand (2016 / 2017)</h3>
+          <div class="links">
+            <a target="_blank" class="work" href="https://github.com/EricJZell/whos_on_hand">View Source Code</a>
+          </div>
+          <p>
+            Who's on Hand is a Raspberry Pi application that monitors active WiFi users on a selected network.
+            The Raspberry Pi application sends data to a Ruby on Rails web application via HTTP to be displayed
+            in a user interface.
+          </p>
+        </div>
+      </div>
+      <div class="content-wrap portfolio-item">
+        <div class="description">
+          <h3>Chchchanges (2016)</h3>
+          <div class="links">
+            <a target="_blank" class="work" href="https://github.com/EricJZell/chchchanges">View Source Code</a>
+          </div>
+          <p>
+            Chchchanges is a Ruby gem that makes it easy for a team of developers to keep a consistent,
+            detailed Changelog. With chchchanges, users can create CHANGELOG entries from the command line.
+            Each entry is saved as an individual .json file which prevents CHANGELOG merge conflicts.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="section">
-    <h2 class="section-title">Side Projects</h2>
-    <div class="content-wrap">
-      <div class="description">
-        <h3>Machine Learning Baseball (2018)</h3>
-        <div class="links">
-          <a target="_blank" class="work" href="https://github.com/EricJZell/machine_learning_baseball">View Source Code</a>
-          <a target="_blank" class="work demo" href="https://machine-learning-baseball.herokuapp.com/2018-06-13">Visit Demo Site</a>
-        </div>
-        <p>
-          Machine Learning Baseball is a Python web application that employs machine learning techniques
-          to predict pitcher vs. batter matchups of Major League Baseball games. This application was
-          my final project for Harvard CS50, which I completed in Spring 2018 through the Harvard Extension School.
-          Beginning with a sparse matrix of available pitcher vs. batter statistics, Low Rank Matrix Factorization
-          was used to generate a fully populated matrix which predicts statistics for every possible matchup.
-          A Python Flask web application was created to display the resulting data in an easy-to-use interface.
-        </p>
-      </div>
-    </div>
-    <div class="content-wrap">
-      <div class="description">
-        <h3>First to Know (2016 / 2017)</h3>
-        <div class="links">
-          <a target="_blank" class="work" href="https://github.com/EricJZell/first_to_know">View Source Code</a>
-          <a target="_blank" class="work demo" href="https://first-to-know.herokuapp.com/">Visit Demo Site</a>
-        </div>
-        <p>
-          First to Know is a Ruby on Rails web application where users can subscribe to receive text message alerts
-          when a selected twitter user tweets a certain phrase. For example, perhaps
-          you want to be the first to know when Papa John's is giving away free pizza. You can create a
-          subscription to Papa John's twitter account for the phrase 'free pizza'. As soon as Papa John's
-          tweets anything containing the string 'free pizza', a text message will be sent to the user's
-          provided phone number within minutes.
-        </p>
-      </div>
-    </div>
-    <div class="content-wrap">
-      <div class="description">
-        <h3>Swell Journal (2015 / 2016)</h3>
-        <div class="links">
-          <a target="_blank" class="work" href="https://github.com/EricJZell/swell_journal">View Source Code</a>
-          <a target="_blank" class="work demo" href="https://swelljournal.herokuapp.com/">Visit Demo Site</a>
-        </div>
-        <p>
-          Swell Journal is a Ruby on Rails web application that allows users to document and share their
-          surf travels with friends. The application uses geolocation services, Google Maps, and an oceanographic weather API
-          to create a snap-shot of the conditions at the time of the journal entry.
-        </p>
-      </div>
-    </div>
-    <div class="content-wrap">
-      <div class="description">
-        <h3>Who's on Hand (2016 / 2017)</h3>
-        <div class="links">
-          <a target="_blank" class="work" href="https://github.com/EricJZell/whos_on_hand">View Source Code</a>
-        </div>
-        <p>
-          Who's on Hand is a Raspberry Pi application that monitors active WiFi users on a selected network.
-          The Raspberry Pi application sends data to a Ruby on Rails web application via HTTP to be displayed
-          in a user interface.
-        </p>
-      </div>
-    </div>
-    <div class="content-wrap">
-      <div class="description">
-        <h3>Chchchanges (2016)</h3>
-        <div class="links">
-          <a target="_blank" class="work" href="https://github.com/EricJZell/chchchanges">View Source Code</a>
-        </div>
-        <p>
-          Chchchanges is a Ruby gem that makes it easy for a team of developers to keep a consistent,
-          detailed Changelog. With chchchanges, users can create CHANGELOG entries from the command line.
-          Each entry is saved as an individual .json file which prevents CHANGELOG merge conflicts.
-        </p>
-      </div>
-    </div>
-  </div>
+
 
   <footer>
     <p>

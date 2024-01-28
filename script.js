@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  const nav = document.querySelector('#main');
+  const nav = document.querySelector('#nav');
   const topOfNav = nav.offsetTop;
 
   function fixNav(e) {

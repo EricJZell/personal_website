@@ -94,27 +94,44 @@ nav a {
   text-transform: uppercase;
 }
 
+h2#intro {
+  padding-right: 30%;
+}
+
+div#portfolio {
+  display: flex;
+}
+
+.section {
+  margin: 15px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 h2.section-title {
   font-size: 2em;
   color: #999;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   margin: 0;
-}
-
-.white {
-  background-color: white;
-}
-
-.section {
-  width: 100%;
 }
 
 .content-wrap {
   display: flex;
   max-width: 800px;
   margin: 0 auto;
-  padding:20px;
+  padding:15px;
+  position: relative;
+}
+.portfolio-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Adjust the position of the border */
+  transform: translateX(-50%);
+  width: 80%; /* Adjust the width of the border */
+  height: 3px; /* Adjust the thickness of the border */
+  background-color: #efefef; /* Color of the border */
 }
 
 .intro {
@@ -142,7 +159,8 @@ p, h3, h4 {
 }
 
 a.work, a.work:visited {
-  color: #999;
+  color: #555555;
+  font-weight: bold;
   margin-top: 10px;
   margin-right: 40px;
   font-size: 22px;
@@ -173,5 +191,14 @@ footer {
   color: #999;
   font-size: 14px;
   text-align: center;
-  padding: 40px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  h2#intro {
+    padding-right: 0;
+  }
+  div#portfolio {
+    display: block;
+  }
 }
