@@ -13,8 +13,8 @@ header {
   color: white;
   text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
   text-align: center;
-  height:50vh;
-  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ),url(img/big_sky.jpg) bottom center no-repeat;
+  height:35vh;
+  background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) ),url(img/big_sky.jpg) bottom center no-repeat;
   background-size:cover;
   align-items:center;
   justify-content: center;
@@ -23,6 +23,7 @@ header {
 h2.welcome{
   font-family: 'Dancing Script', cursive;
   margin-top: 0;
+  padding-top: 30px;
 }
 
 h1 {
@@ -30,6 +31,7 @@ h1 {
 }
 
 nav {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   background:black;
   top:0;
   width: 100%;
@@ -40,11 +42,11 @@ nav {
 
 nav a:hover {
   color: #CAEBF2;
+  transform: scale(1.1)
 }
 
 .fixed-nav nav {
   position: fixed;
-  box-shadow: 0 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -115,18 +117,23 @@ h2.section-title {
   padding:20px;
 }
 
+.intro {
+  max-width: fit-content;
+}
+
 .description {
   flex: 3;
 }
 
 .image {
   flex: 1;
+  max-width: 230px;
 }
 
 .image img {
   width: 80%;
   border: 2px solid #eee;
-  border-radius: 10px;
+  border-radius: 50%;
   margin: 10px auto;
 }
 
