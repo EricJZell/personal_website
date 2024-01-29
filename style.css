@@ -13,17 +13,15 @@ header {
   color: white;
   text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
   text-align: center;
-  height:35vh;
   background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) ),url(img/big_sky.jpg) bottom center no-repeat;
   background-size:cover;
   align-items:center;
   justify-content: center;
+  padding: 30px;
 }
 
 h2.welcome{
   font-family: 'Dancing Script', cursive;
-  margin-top: 0;
-  padding-top: 30px;
 }
 
 h1 {
@@ -56,7 +54,7 @@ nav ul {
   display:flex;
 }
 
-nav li {
+nav ul li {
   flex:1;
   text-align: center;
   display: flex;
@@ -195,8 +193,26 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+  html {
+    font-size: 16px;
+    font-weight: 150;
+  }
+
+  nav ul li.logo {
+    flex: 2;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  h1 {
+  font-size: 2em;
+  }
+
   h2#intro {
     padding-right: 0;
+    font-size: 1em;
   }
   div#portfolio {
     display: block;
