@@ -115,7 +115,6 @@ h2.section-title {
 }
 
 .content-wrap {
-  display: flex;
   max-width: 800px;
   margin: 0 auto;
   padding:15px;
@@ -133,14 +132,23 @@ h2.section-title {
 }
 
 .intro {
+  display: flex;
   max-width: fit-content;
 }
 
-.description {
-  flex: 3;
+.blurb {
+  flex: 5;
 }
 
-.image {
+div.job-header {
+  display: flex;
+}
+
+div.job-details {
+  flex: 4;
+}
+
+div.image {
   flex: 1;
   max-width: 230px;
 }
@@ -168,8 +176,11 @@ a.work:hover {
   filter: brightness(50%);
 }
 
-a.demo, a.demo:visited {
-  color: #FF3B3F;
+a.source-code, a.source-code:visited {
+  color: #555555;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 h4 {
@@ -196,6 +207,10 @@ footer {
   html {
     font-size: 16px;
     font-weight: 150;
+  }
+
+  header {
+    text-shadow: 1px 2px 0 rgba(0,0,0,0.2);
   }
 
   nav ul li.logo {
